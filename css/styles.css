@@ -34,18 +34,19 @@ body {
 
 .mail-tel {
   display: flex;
+  margin-left: auto;
   align-items: center;
 }
 
 .icon-mal {
   width: 16px;
-  height: 26px;
+  height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 .icon-tel {
-  width: 16px;
-  height: 26px;
+  width: 10px;
+  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -112,7 +113,7 @@ p {
 
   align-items: center;
   margin-right: 30px;
-  margin-left: 318px;
+  /*margin-left: 318px;*/
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -222,14 +223,23 @@ p {
 
 /*Оформлення іконок*/
 .icon-background {
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  /*text-align: center;*/
+
+  border-radius: 4px;
   background-color: var(--icon-background);
 }
 .icon-svg {
   width: 70px;
   height: 70px;
-  margin: 25px 100px;
+  /* margin: 25px 100px;*/
+
   fill: currentColor;
 }
 
@@ -323,11 +333,6 @@ p {
   fill: currentColor;
 }
 
-.icon-soc:hover,
-.icon-soc:focus {
-  color: #fff;
-}
-
 .icon-position {
   width: 44px;
   height: 44px;
@@ -337,8 +342,10 @@ p {
 
   /*background-color: #2196f3;*/
 }
-.icon-position:hover {
+.icon-position:hover,
+.icon-position:focus {
   background-color: #2196f3;
+  color: #fff;
 }
 /*.icon-position:first-child {
   margin-left: 32px;
@@ -354,33 +361,39 @@ p {
   margin-right: 0;
 }
 
-.icon-group {
-  width: 106px;
-  height: 60px;
-  margin: 16px 32px;
-
-  fill: var(--icon-social);
-}
-.icon-group:hover,
-.icon-group:focus {
-  /*background-color: var(--accent-color);*/
-  fill: var(--accent-color);
-}
-
 .link-company {
-  max-width: 170px;
-  max-height: 92px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  /*margin: auto;*/
+  color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 .link-company:hover,
 .link-company:focus {
+  color: #2196f3;
   border: 1px solid var(--accent-color);
 }
 /*.link-company:last-child {
   margin-right: 0;
 }*/
+
+.icon-group {
+  width: 106px;
+  height: 60px;
+  /*margin: 16px 32px;*/
+
+  fill: currentColor;
+}
+.icon-group:hover,
+.icon-group:focus {
+  /*background-color: var(--accent-color);*/
+  color: var(--accent-color);
+}
 
 .address {
   margin-bottom: 9px;
@@ -468,12 +481,14 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 100%;
+
   background: rgba(255, 255, 255, 0.1);
   color: #afb1b8;
 
   /*background-color: #2196f3;*/
 }
-.icon-position-footer:hover {
+.icon-position-footer:hover,
+.icon-position-footer:focus {
   background-color: var(--accent-color);
 }
 .icon-soc-footer {
